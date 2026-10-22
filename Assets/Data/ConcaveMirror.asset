@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8809dc4fd014a449aa216ed1c4de49a, type: 3}
+  m_Name: ConcaveMirror
+  m_EditorClassIdentifier: 
+  displayName: Concave Mirror
+  shortCode: CM
+  isMirror: 1
+  converging: 1
+  accentColor: {r: 0.3764706, g: 0.64705884, b: 0.98039216, a: 1}
+  illustration: {fileID: 21300000, guid: a4f94a8f3b5a0064ab3f2a999cd97a96, type: 3}
+  subtitle: "Converging reflector \u2014 curves inward"
+  summary: "Converging reflector \u2014 curves inward. It converges reflected rays
+    and can form real or virtual images."
+  keyBehaviours:
+  - Focus F lies in front of mirror (real focus)
+  - "Object beyond C \u2192 real, inverted, diminished image"
+  - "Object between F and C \u2192 real, inverted, magnified"
+  - "Object inside F \u2192 virtual, erect, magnified image"
+  formulaHeading: MIRROR FORMULA
+  formula: 1/v + 1/u = 1/f
+  magnificationFormula: "Magnification: m = \u2212v/u"
+  defaultFocalLength: 15
+  minFocalLength: 5
+  maxFocalLength: 30
+  defaultObjectDistance: 31.5
+  minObjectDistance: 3
+  maxObjectDistance: 60
+  conceptObjectDistance: 40
+  challenge:
+    title: Create an Inverted Image
+    instruction: Place the object so the image is inverted.
+    nature: 0
+    orientation: 2
+    minMagnification: 0
+    maxMagnification: 0
+    startObjectDistance: 10
+    startFocalLength: 0
+    lockFocal: 0
+    lockObject: 0
+    targetObjectDistance: 0
+    checkImageDistance: 0
+    targetImageDistance: 0
+    targetFocalLength: 0
+    targetSize: 0
+    tolerance: 1
+    explanation: 
+  questions:
+  - title: Image at the Centre of Curvature
+    instruction: The mirror has f = 15 cm. Move the candle so its image is caught
+      on the screen 30 cm in front of the mirror.
+    nature: 0
+    orientation: 0
+    minMagnification: 0
+    maxMagnification: 0
+    startObjectDistance: 45
+    startFocalLength: 15
+    lockFocal: 1
+    lockObject: 0
+    targetObjectDistance: 0
+    checkImageDistance: 1
+    targetImageDistance: 30
+    targetFocalLength: 0
+    targetSize: 0
+    tolerance: 1.5
+    explanation: "1/u = 1/f \u2212 1/v = 1/15 \u2212 1/30 = 1/30, so u = 30 cm. The
+      candle is at C (= 2f) and the image forms at C too: real, inverted and the
+      same size."
+  - title: Twice as Big on the Screen
+    instruction: With f = 15 cm, place the candle so the mirror forms a real image
+      twice as tall as the candle.
+    nature: 1
+    orientation: 0
+    minMagnification: 0
+    maxMagnification: 0
+    startObjectDistance: 40
+    startFocalLength: 15
+    lockFocal: 1
+    lockObject: 0
+    targetObjectDistance: 0
+    checkImageDistance: 0
+    targetImageDistance: 0
+    targetFocalLength: 0
+    targetSize: 2
+    tolerance: 1
+    explanation: "Real and 2\xD7 means m = \u22122, so v = 2u. 1/u + 1/(2u) = 1/15
+      gives u = 22.5 cm and v = 45 cm. The candle sits between C and F."
+  - title: Shaving Mirror
+    instruction: 'Use the concave mirror like a shaving mirror: get an upright image
+      3 times larger than the candle.'
+    nature: 2
+    orientation: 1
+    minMagnification: 0
+    maxMagnification: 0
+    startObjectDistance: 40
+    startFocalLength: 15
+    lockFocal: 1
+    lockObject: 0
+    targetObjectDistance: 0
+    checkImageDistance: 0
+    targetImageDistance: 0
+    targetFocalLength: 0
+    targetSize: 3
+    tolerance: 1
+    explanation: "An upright, magnified image needs the candle inside F. Virtual
+      with m = +3 means v = \u22123u: 1/u \u2212 1/(3u) = 1/15 gives u = 10 cm, v
+      = \u221230 cm (behind the mirror)."
+  - title: Find the Focal Length
+    instruction: The candle is fixed 20 cm from the mirror. Change the focal length
+      (or R in Adjust) until the image forms on a screen 60 cm from the mirror.
+    nature: 0
+    orientation: 0
+    minMagnification: 0
+    maxMagnification: 0
+    startObjectDistance: 20
+    startFocalLength: 25
+    lockFocal: 0
+    lockObject: 1
+    targetObjectDistance: 0
+    checkImageDistance: 1
+    targetImageDistance: 60
+    targetFocalLength: 15
+    targetSize: 0
+    tolerance: 2
+    explanation: 1/f = 1/u + 1/v = 1/20 + 1/60 = 4/60, so f = 15 cm and R = 2f =
+      30 cm.

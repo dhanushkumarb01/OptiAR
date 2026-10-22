@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8809dc4fd014a449aa216ed1c4de49a, type: 3}
+  m_Name: ConvexLens
+  m_EditorClassIdentifier: 
+  displayName: Convex Lens
+  shortCode: CL
+  isMirror: 0
+  converging: 1
+  accentColor: {r: 0.20392157, g: 0.827451, b: 0.6, a: 1}
+  illustration: {fileID: 21300000, guid: 4573ea639ed8c7041aa21b8ff42d3858, type: 3}
+  subtitle: "Converging lens \u2014 thicker at center"
+  summary: "Converging lens \u2014 thicker at center. It bends parallel rays to meet
+    at the focus and can form real or virtual images."
+  keyBehaviours:
+  - "Parallel rays converge at the focus F\u2082"
+  - "Object beyond 2F \u2192 real, inverted, diminished image"
+  - "Object between F and 2F \u2192 real, inverted, magnified"
+  - "Object inside F \u2192 virtual, erect, magnified image"
+  formulaHeading: LENS FORMULA
+  formula: "1/v \u2212 1/u = 1/f"
+  magnificationFormula: 'Magnification: m = v/u'
+  defaultFocalLength: 15
+  minFocalLength: 5
+  maxFocalLength: 30
+  defaultObjectDistance: 25
+  minObjectDistance: 3
+  maxObjectDistance: 60
+  conceptObjectDistance: 40
+  challenge:
+    title: Project a Magnified Image
+    instruction: Place the object so the lens forms a real, magnified image.
+    nature: 1
+    orientation: 0
+    minMagnification: 1.01
+    maxMagnification: 0
+    startObjectDistance: 40
+    startFocalLength: 0
+    lockFocal: 0
+    lockObject: 0
+    targetObjectDistance: 0
+    checkImageDistance: 0
+    targetImageDistance: 0
+    targetFocalLength: 0
+    targetSize: 0
+    tolerance: 1
+    explanation: 
+  questions:
+  - title: Projector
+    instruction: "Make the lens work like a projector: a real image 3\xD7 bigger
+      than the candle on the screen (f = 15 cm)."
+    nature: 1
+    orientation: 0
+    minMagnification: 0
+    maxMagnification: 0
+    startObjectDistance: 40
+    startFocalLength: 15
+    lockFocal: 1
+    lockObject: 0
+    targetObjectDistance: 0
+    checkImageDistance: 0
+    targetImageDistance: 0
+    targetFocalLength: 0
+    targetSize: 3
+    tolerance: 1
+    explanation: "Real with m = \u22123 means v = 3u: 1/u + 1/(3u) = 1/15 gives u
+      = 20 cm, v = 60 cm. A projector holds the slide just outside F."
+  - title: "Image at 2F\u2082"
+    instruction: "Place the candle so its image forms at 2F\u2082, 30 cm behind the
+      lens."
+    nature: 0
+    orientation: 0
+    minMagnification: 0
+    maxMagnification: 0
+    startObjectDistance: 45
+    startFocalLength: 15
+    lockFocal: 1
+    lockObject: 0
+    targetObjectDistance: 0
+    checkImageDistance: 1
+    targetImageDistance: 30
+    targetFocalLength: 0
+    targetSize: 0
+    tolerance: 1.5
+    explanation: "1/u = 1/15 \u2212 1/30 = 1/30, so u = 30 cm: a candle at 2F\u2081
+      gives an image at 2F\u2082, inverted and the same size."
+  - title: Magnifying Glass
+    instruction: "Use the lens as a magnifying glass: an upright image 2.5\xD7 bigger
+      than the candle."
+    nature: 2
+    orientation: 1
+    minMagnification: 0
+    maxMagnification: 0
+    startObjectDistance: 40
+    startFocalLength: 15
+    lockFocal: 1
+    lockObject: 0
+    targetObjectDistance: 0
+    checkImageDistance: 0
+    targetImageDistance: 0
+    targetFocalLength: 0
+    targetSize: 2.5
+    tolerance: 1
+    explanation: "Virtual with m = +2.5 means v = \u22122.5u: 1/u \u2212 1/(2.5u)
+      = 1/15 gives u = 9 cm, v = \u221222.5 cm. The candle must be inside F."
+  - title: Pick the Lens
+    instruction: The candle is fixed 40 cm from the lens. Change the focal length
+      so the real image is exactly the same size as the candle.
+    nature: 1
+    orientation: 0
+    minMagnification: 0
+    maxMagnification: 0
+    startObjectDistance: 40
+    startFocalLength: 10
+    lockFocal: 0
+    lockObject: 1
+    targetObjectDistance: 0
+    checkImageDistance: 0
+    targetImageDistance: 0
+    targetFocalLength: 20
+    targetSize: 1
+    tolerance: 1
+    explanation: "Same size and real means v = u = 40 cm, so 1/f = 1/40 + 1/40 and
+      f = 20 cm. The candle is then at 2F\u2081."

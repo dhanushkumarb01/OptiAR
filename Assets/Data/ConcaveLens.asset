@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8809dc4fd014a449aa216ed1c4de49a, type: 3}
+  m_Name: ConcaveLens
+  m_EditorClassIdentifier: 
+  displayName: Concave Lens
+  shortCode: CC
+  isMirror: 0
+  converging: 0
+  accentColor: {r: 0.9843137, g: 0.57254905, b: 0.23529412, a: 1}
+  illustration: {fileID: 21300000, guid: 518e784709900eb4388017c6755dcae8, type: 3}
+  subtitle: "Diverging lens \u2014 thinner at center"
+  summary: "Diverging lens \u2014 thinner at center. It spreads parallel rays apart
+    as if they came from the focus, always forming a virtual image."
+  keyBehaviours:
+  - "Parallel rays diverge as if from the focus F\u2081"
+  - Image is always virtual and erect
+  - Image is always diminished
+  - "Image forms between F\u2081 and the lens"
+  formulaHeading: LENS FORMULA
+  formula: "1/v \u2212 1/u = 1/f"
+  magnificationFormula: 'Magnification: m = v/u'
+  defaultFocalLength: 15
+  minFocalLength: 5
+  maxFocalLength: 30
+  defaultObjectDistance: 25
+  minObjectDistance: 3
+  maxObjectDistance: 60
+  conceptObjectDistance: 30
+  challenge:
+    title: Reduce the Image
+    instruction: "Place the object so the image is at most 0.4\xD7 the object's size."
+    nature: 0
+    orientation: 0
+    minMagnification: 0
+    maxMagnification: 0.4
+    startObjectDistance: 8
+    startFocalLength: 0
+    lockFocal: 0
+    lockObject: 0
+    targetObjectDistance: 0
+    checkImageDistance: 0
+    targetImageDistance: 0
+    targetFocalLength: 0
+    targetSize: 0
+    tolerance: 1
+    explanation: 
+  questions:
+  - title: One-third Size
+    instruction: Place the candle so its image is one third as tall as the candle
+      (f = 15 cm).
+    nature: 0
+    orientation: 0
+    minMagnification: 0
+    maxMagnification: 0
+    startObjectDistance: 10
+    startFocalLength: 15
+    lockFocal: 1
+    lockObject: 0
+    targetObjectDistance: 0
+    checkImageDistance: 0
+    targetImageDistance: 0
+    targetFocalLength: 0
+    targetSize: 0.33333334
+    tolerance: 1
+    explanation: "The image is virtual and upright: m = +1/3 means v = \u2212u/3.
+      1/u \u2212 3/u = \u22121/15 gives u = 30 cm, v = \u221210 cm."
+  - title: Image 6 cm Away
+    instruction: Move the candle so its image forms 6 cm from the lens, on the candle's
+      side.
+    nature: 0
+    orientation: 0
+    minMagnification: 0
+    maxMagnification: 0
+    startObjectDistance: 40
+    startFocalLength: 15
+    lockFocal: 1
+    lockObject: 0
+    targetObjectDistance: 0
+    checkImageDistance: 1
+    targetImageDistance: -6
+    targetFocalLength: 0
+    targetSize: 0
+    tolerance: 0.4
+    explanation: "1/u = 1/f \u2212 1/v = \u22121/15 + 1/6 = 1/10, so u = 10 cm."
+  - title: Denser Glass
+    instruction: This lens is glass with n = 1.50 and R = 15 cm, so f = 15 cm. Open
+      Adjust and change only the glass (n) until the focal length is 10 cm.
+    nature: 0
+    orientation: 0
+    minMagnification: 0
+    maxMagnification: 0
+    startObjectDistance: 30
+    startFocalLength: 15
+    lockFocal: 0
+    lockObject: 0
+    targetObjectDistance: 0
+    checkImageDistance: 0
+    targetImageDistance: 0
+    targetFocalLength: 10
+    targetSize: 0
+    tolerance: 1
+    explanation: "For a thin lens with two equal surfaces, 1/f = 2(n \u2212 1)/R.
+      With R = 15 cm, f = 10 cm needs n \u2212 1 = 0.75, so n = 1.75 (dense flint
+      glass). Denser glass bends light more, so the lens gets stronger."
+  - title: As Big As Possible
+    instruction: "A concave lens always makes a smaller image. Get it to at least
+      0.8\xD7 the candle's size."
+    nature: 2
+    orientation: 0
+    minMagnification: 0.8
+    maxMagnification: 0
+    startObjectDistance: 40
+    startFocalLength: 15
+    lockFocal: 1
+    lockObject: 0
+    targetObjectDistance: 0
+    checkImageDistance: 0
+    targetImageDistance: 0
+    targetFocalLength: 0
+    targetSize: 0
+    tolerance: 1
+    explanation: Here m = 15/(15 + u), so the image grows as the candle comes closer
+      and reaches 0.8 at u = 3.75 cm, but it is never real and never larger than
+      the candle.

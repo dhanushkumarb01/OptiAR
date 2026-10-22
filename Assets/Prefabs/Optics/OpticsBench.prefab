@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4236553195072804113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4445180268813487663}
+  - component: {fileID: 4975050544278462321}
+  m_Layer: 0
+  m_Name: OpticsBench
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4445180268813487663
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4236553195072804113}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4975050544278462321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4236553195072804113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e8a5745a07fa164dba78e53eb33b606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fitHalfWidth: 0.16
+  minHalfWidth: 0.05
+  maxHalfWidth: 1
+  fitScreenWidth: 0.85
+  elementHeightPerHalfWidth: 0.34
+  curvatureEmphasis: 0.22
+  zoomSpeed: 4
+  maxExtentPerObjectRange: 3
+  axisHeight: 0.25
+  belowEyes: 0.03
+  viewAngle: -30
+  fanRayCount: 13
+  rayMaterial: {fileID: 2100000, guid: 01478b2df15e86647b8aa2d5567330e8, type: 2}
+  dashedMaterial: {fileID: 2100000, guid: 8d8e1f951cd618543a0d3925ea67f625, type: 2}
+  mirrorMaterial: {fileID: 2100000, guid: cf199123de6cf4448b1a28799fe17d2c, type: 2}
+  glassMaterial: {fileID: 2100000, guid: 2975a1947713b2d48952c895356ea718, type: 2}
+  markerMaterial: {fileID: 2100000, guid: fde084e6aeb701340b9cc23515e8265d, type: 2}
+  woodMaterial: {fileID: 2100000, guid: 2f3004822eb2abb49bccb1d94dcd1f89, type: 2}
+  metalMaterial: {fileID: 2100000, guid: 6b2063078c83c954d9bb4c5c208cb3ab, type: 2}
+  holderMaterial: {fileID: 2100000, guid: a937906661a35f848948006844cf29f9, type: 2}
+  paintMaterial: {fileID: 2100000, guid: c994bd386f541ec4baa7d2ee1882b7f7, type: 2}
+  ghostMaterial: {fileID: 2100000, guid: 76c666fb241f90044b2bb07c011c6e42, type: 2}
+  flameMaterial: {fileID: 2100000, guid: f294fb45d3ec8044d88321a1ae57a3bc, type: 2}
+  glowMaterial: {fileID: 2100000, guid: b8fc852feefab5f419b8ad668da3184c, type: 2}
+  labelFont: {fileID: 11400000, guid: 8a0d108c167300643b96bdb8d0e9bc44, type: 2}
+  candleLightColor: {r: 1, g: 0.72, b: 0.4, a: 1}
+  candleLightIntensity: 1.6
+  pulseSpacing: 0.035
+  pulseSpeed: 0.08
+  rayWidth: 0.0025
+  axisColor: {r: 0.25, g: 0.32, b: 0.43, a: 0.9}
+  objectColor: {r: 0.96, g: 0.62, b: 0.04, a: 1}
+  imageColor: {r: 0.2, g: 0.83, b: 0.6, a: 1}
+  focusColor: {r: 0.98, g: 0.8, b: 0.08, a: 1}
+  centreColor: {r: 0.8, g: 0.84, b: 0.88, a: 1}
+  parallelRayColor: {r: 0.13, g: 0.83, b: 0.93, a: 1}
+  centralRayColor: {r: 0.96, g: 0.45, b: 0.71, a: 1}
+  focalRayColor: {r: 0.51, g: 0.55, b: 0.97, a: 1}
+  fanRayColor: {r: 0.98, g: 0.92, b: 0.55, a: 1}
+  measureColor: {r: 0.39, g: 0.45, b: 0.55, a: 1}
+  railColor: {r: 0.16, g: 0.18, b: 0.22, a: 1}
+  scaleColor: {r: 0.92, g: 0.93, b: 0.95, a: 1}
+  mirrorBackColor: {r: 0.22, g: 0.24, b: 0.28, a: 1}
+  waxColor: {r: 0.96, g: 0.93, b: 0.86, a: 1}
+  screenColor: {r: 0.97, g: 0.97, b: 0.95, a: 1}

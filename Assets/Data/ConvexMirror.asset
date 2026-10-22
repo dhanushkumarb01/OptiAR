@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8809dc4fd014a449aa216ed1c4de49a, type: 3}
+  m_Name: ConvexMirror
+  m_EditorClassIdentifier: 
+  displayName: Convex Mirror
+  shortCode: CV
+  isMirror: 1
+  converging: 0
+  accentColor: {r: 0.654902, g: 0.54509807, b: 0.98039216, a: 1}
+  illustration: {fileID: 21300000, guid: 66daf03ee8957ef4ebb2e35c6165a341, type: 3}
+  subtitle: "Diverging reflector \u2014 curves outward"
+  summary: "Diverging reflector \u2014 curves outward. It spreads reflected rays
+    apart and always forms a virtual, erect, diminished image."
+  keyBehaviours:
+  - Focus F lies behind the mirror (virtual focus)
+  - Image is always virtual and erect
+  - Image is always diminished
+  - Image forms between P and F, behind the mirror
+  formulaHeading: MIRROR FORMULA
+  formula: 1/v + 1/u = 1/f
+  magnificationFormula: "Magnification: m = \u2212v/u"
+  defaultFocalLength: 15
+  minFocalLength: 5
+  maxFocalLength: 30
+  defaultObjectDistance: 25
+  minObjectDistance: 3
+  maxObjectDistance: 60
+  conceptObjectDistance: 30
+  challenge:
+    title: Shrink the Image
+    instruction: Place the object so the image is at most half the object's size.
+    nature: 0
+    orientation: 0
+    minMagnification: 0
+    maxMagnification: 0.5
+    startObjectDistance: 8
+    startFocalLength: 0
+    lockFocal: 0
+    lockObject: 0
+    targetObjectDistance: 0
+    checkImageDistance: 0
+    targetImageDistance: 0
+    targetFocalLength: 0
+    targetSize: 0
+    tolerance: 1
+    explanation: 
+  questions:
+  - title: Half-size Image
+    instruction: Place the candle so its image in the convex mirror is exactly half
+      as tall as the candle.
+    nature: 0
+    orientation: 0
+    minMagnification: 0
+    maxMagnification: 0
+    startObjectDistance: 40
+    startFocalLength: 15
+    lockFocal: 1
+    lockObject: 0
+    targetObjectDistance: 0
+    checkImageDistance: 0
+    targetImageDistance: 0
+    targetFocalLength: 0
+    targetSize: 0.5
+    tolerance: 1
+    explanation: "A convex mirror's image is always virtual and upright. m = +0.5
+      means v = \u2212u/2: 1/u \u2212 2/u = \u22121/15 gives u = 15 cm, v = \u22127.5
+      cm."
+  - title: Image 10 cm Behind
+    instruction: Move the candle so its image appears 10 cm behind the mirror (f
+      = 15 cm).
+    nature: 0
+    orientation: 0
+    minMagnification: 0
+    maxMagnification: 0
+    startObjectDistance: 10
+    startFocalLength: 15
+    lockFocal: 1
+    lockObject: 0
+    targetObjectDistance: 0
+    checkImageDistance: 1
+    targetImageDistance: -10
+    targetFocalLength: 0
+    targetSize: 0
+    tolerance: 0.7
+    explanation: "1/u = 1/f \u2212 1/v = \u22121/15 + 1/10 = 1/30, so u = 30 cm."
+  - title: Can It Be Real?
+    instruction: "Try to make a real image with the convex mirror. You can't! Instead,
+      make the image as big as you can: at least 0.8\xD7 the candle."
+    nature: 2
+    orientation: 0
+    minMagnification: 0.8
+    maxMagnification: 0
+    startObjectDistance: 40
+    startFocalLength: 15
+    lockFocal: 1
+    lockObject: 0
+    targetObjectDistance: 0
+    checkImageDistance: 0
+    targetImageDistance: 0
+    targetFocalLength: 0
+    targetSize: 0
+    tolerance: 1
+    explanation: "Here m = 15/(15 + u), which is always less than 1, and reaches
+      0.8 only when u \u2264 3.75 cm. A convex mirror never makes a real or enlarged
+      image, which is why it gives a wide, small view (car side mirrors)."
+  - title: Set the Curvature
+    instruction: Open Adjust and make the radius of curvature R = 40 cm. Then place
+      the candle 20 cm from the mirror.
+    nature: 0
+    orientation: 0
+    minMagnification: 0
+    maxMagnification: 0
+    startObjectDistance: 40
+    startFocalLength: 10
+    lockFocal: 0
+    lockObject: 0
+    targetObjectDistance: 20
+    checkImageDistance: 0
+    targetImageDistance: 0
+    targetFocalLength: 20
+    targetSize: 0
+    tolerance: 0.5
+    explanation: "R = 2f, so f = 20 cm. With u = 20 cm: 1/v = \u22121/20 \u2212 1/20,
+      so v = \u221210 cm, an upright image half the size."
